@@ -1,122 +1,159 @@
-# Hi, I'm Shivam Patel
+<div align="center">
+  <img src="assets/profile-hero.svg" alt="Shivam Patel — Computer Engineering Portfolio" width="100%" />
 
-Computer Engineering Co-op student at the University of Guelph building software where **systems thinking, reliability, and practical engineering** matter.
+  [![Portfolio](https://img.shields.io/badge/portfolio-engineering%20systems-2563eb)](https://github.com/shiv814)
+  ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
+  ![C++](https://img.shields.io/badge/C%2B%2B-17-00599C?logo=cplusplus&logoColor=white)
+  ![Java](https://img.shields.io/badge/Java-17%2F21-ED8B00?logo=openjdk&logoColor=white)
+  ![CI](https://img.shields.io/badge/GitHub%20Actions-cross--platform-2088FF?logo=githubactions&logoColor=white)
+</div>
 
-My portfolio spans backend services, operating-system observability, computer architecture, safety-oriented embedded control, and object-oriented application design. I enjoy taking a small working prototype and pushing it toward a clearer architecture, richer domain model, stronger validation, better testability, and more useful tooling.
+## Hi — I'm Shivam
 
-## Featured engineering projects
+I'm a **Computer Engineering Co-op student at the University of Guelph** interested in the boundary between software and physical/computing systems: embedded control, backend services, computer architecture, observability, and reliable stateful applications.
 
-### [CampusFlow API](https://github.com/shiv814/campusflow-api)
+My portfolio is intentionally not five copies of the same web app. Each repository attacks a different engineering surface and is built to show the parts that are harder to fake in a screenshot: **domain rules, algorithms, failure behavior, testability, architecture trade-offs, and cross-platform verification.**
 
-[![CampusFlow quality](https://github.com/shiv814/campusflow-api/actions/workflows/test.yml/badge.svg)](https://github.com/shiv814/campusflow-api/actions/workflows/test.yml)
-
-A dependency-free Python and SQLite academic-planning platform.
-
-- searchable course catalogue with departments, delivery modes, capacities, prerequisites, and meeting schedules
-- complete plan lifecycle with ordered courses, grades, notes, status, credit totals, and progress measurement
-- prerequisite-order, timetable-conflict, and credit-overload validation
-- eligible-course recommendations, analytics, CSV export, pagination, CORS, and request IDs
-- backward-compatible schema upgrades and end-to-end HTTP tests
-
-**Engineering focus:** API design, persistence, domain validation, database migrations, integration testing, analytics.
-
----
-
-### [SystemSight Monitor](https://github.com/shiv814/systemsight-monitor)
-
-[![SystemSight quality](https://github.com/shiv814/systemsight-monitor/actions/workflows/test.yml/badge.svg)](https://github.com/shiv814/systemsight-monitor/actions/workflows/test.yml)
-
-A cross-platform Python observability toolkit built with `psutil`.
-
-- CPU, load, memory, swap, disk, network, temperature, uptime, and process collection
-- warning/critical thresholds, health scoring, and remediation recommendations
-- bounded metric history with trends, JSON/CSV export, and z-score anomaly detection
-- stateful alert lifecycle: open, escalate, remind, and recover
-- CLI snapshot/watch/report modes plus JSON and Prometheus-compatible HTTP endpoints
-
-**Engineering focus:** observability, time-series analysis, alert state machines, portable system programming, test doubles.
+<p align="center">
+  <a href="https://github.com/shiv814/campusflow-api"><b>CampusFlow</b></a> ·
+  <a href="https://github.com/shiv814/systemsight-monitor"><b>SystemSight</b></a> ·
+  <a href="https://github.com/shiv814/cachecraft-simulator"><b>CacheCraft</b></a> ·
+  <a href="https://github.com/shiv814/smart-mobility-controller"><b>Smart Mobility</b></a> ·
+  <a href="https://github.com/shiv814/university-management-system"><b>University System</b></a>
+</p>
 
 ---
 
-### [CacheCraft Simulator](https://github.com/shiv814/cachecraft-simulator)
+<img src="assets/portfolio-map.svg" alt="Engineering portfolio map" width="100%" />
 
-[![CacheCraft build](https://github.com/shiv814/cachecraft-simulator/actions/workflows/build.yml/badge.svg)](https://github.com/shiv814/cachecraft-simulator/actions/workflows/build.yml)
+## Featured engineering work
 
-A dependency-free C++17 cache-architecture simulator and experiment CLI.
+<table>
+<tr>
+<td width="50%" valign="top">
 
-- configurable capacity, block size, associativity, latency, and deterministic random seed
-- LRU, FIFO, and random replacement policies
-- write-back/write-through and write-allocate/no-write-allocate strategies
-- typed read/write/instruction traces with multi-block access expansion
-- compulsory, conflict, and capacity miss classification using a fully associative shadow cache
-- dirty lines, writebacks, memory traffic, AMAT, JSON output, policy comparison, set-state inspection, and two-level hierarchy support
+### 🎓 [CampusFlow API](https://github.com/shiv814/campusflow-api)
+[![quality](https://github.com/shiv814/campusflow-api/actions/workflows/test.yml/badge.svg)](https://github.com/shiv814/campusflow-api/actions/workflows/test.yml)
 
-**Engineering focus:** computer architecture, memory systems, modern C++, deterministic simulation, measurement.
+**Python · SQLite · REST · graph algorithms**
+
+Academic-planning platform that combines a persistent course catalog with prerequisite reasoning and schedule constraints.
+
+**V3 engineering:** prerequisite DAG validation, cycle detection, topological/critical-path analysis, bottleneck scoring, deterministic multi-term schedule optimization, degree auditing, iCalendar export, responsive HTML planning reports, API client + retries.
+
+**What it demonstrates:** backend boundaries, data modeling, migrations, graph algorithms, constrained optimization, defensive HTTP handling.
+
+</td>
+<td width="50%" valign="top">
+
+### 📡 [SystemSight Monitor](https://github.com/shiv814/systemsight-monitor)
+[![quality](https://github.com/shiv814/systemsight-monitor/actions/workflows/test.yml/badge.svg)](https://github.com/shiv814/systemsight-monitor/actions/workflows/test.yml)
+
+**Python · psutil · observability · HTTP**
+
+Cross-platform host-observability toolkit that turns system telemetry into health and reliability signals.
+
+**V3 engineering:** composable metric rules, linear/EWMA forecasting, capacity projections, flat-baseline anomaly handling, SLO/error-budget math, fleet aggregation, incident timelines, dark-mode HTML reports with inline SVG trends.
+
+**What it demonstrates:** operational thinking, time-series reasoning, alert-state design, portability, deterministic test doubles.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🧠 [CacheCraft Simulator](https://github.com/shiv814/cachecraft-simulator)
+[![build](https://github.com/shiv814/cachecraft-simulator/actions/workflows/build.yml/badge.svg)](https://github.com/shiv814/cachecraft-simulator/actions/workflows/build.yml)
+
+**C++17 · CMake · computer architecture**
+
+Policy-aware cache simulator and experiment toolkit for understanding memory-system trade-offs against different workloads.
+
+**V3 engineering:** workload characterization, reuse-distance analysis, deterministic synthetic traces, multi-configuration sweeps, miss-rate/AMAT/traffic metrics, Pareto-frontier selection, CSV/JSON experiment output.
+
+**What it demonstrates:** modern C++, architecture fundamentals, deterministic simulation, performance measurement, multi-objective engineering trade-offs.
+
+</td>
+<td width="50%" valign="top">
+
+### ♿ [Smart Mobility Controller](https://github.com/shiv814/smart-mobility-controller)
+[![build](https://github.com/shiv814/smart-mobility-controller/actions/workflows/build.yml/badge.svg)](https://github.com/shiv814/smart-mobility-controller/actions/workflows/build.yml)
+
+**C++17 · Arduino · embedded control**
+
+Safety-oriented motion-control prototype built around explicit fail-safe behavior rather than just motor output.
+
+**V3 engineering:** priority/TTL command arbitration, emergency override, battery reserve/range estimation, differential odometry, read-only safety diagnostics, hazard analysis, deterministic validation scenarios.
+
+**What it demonstrates:** state machines, watchdogs/interlocks, hardware/software boundaries, safety documentation, scenario-based verification.
+
+> Portfolio prototype — not certified medical-device software.
+
+</td>
+</tr>
+</table>
+
+### 🏫 [University Management System](https://github.com/shiv814/university-management-system)
+[![build](https://github.com/shiv814/university-management-system/actions/workflows/build.yml/badge.svg)](https://github.com/shiv814/university-management-system/actions/workflows/build.yml)
+
+**Java 17/21 · OOP · algorithms · persistence**
+
+Academic-record application that treats enrollment as a lifecycle with prerequisites, capacity, FIFO waitlists, completion, transcripts/GPA and durable CSV restoration.
+
+**V3 engineering:** immutable degree requirements, degree-progress audits, deterministic timetable optimization, demand/capacity analytics, prerequisite data-quality auditing, and a generated responsive portfolio dashboard.
+
+**What it demonstrates:** domain invariants, immutable value modeling, collection design, backtracking search, analytics, persistence and platform-independent Java tooling.
 
 ---
 
-### [Smart Mobility Controller](https://github.com/shiv814/smart-mobility-controller)
+## Proof, not just feature lists
 
-[![Mobility build](https://github.com/shiv814/smart-mobility-controller/actions/workflows/build.yml/badge.svg)](https://github.com/shiv814/smart-mobility-controller/actions/workflows/build.yml)
+| Repository | Automated verification |
+|---|---|
+| **CampusFlow** | Python 3.10, 3.11, 3.12 and 3.13; domain + HTTP + graph/optimizer/export tests |
+| **SystemSight** | Python 3.10/3.12 across Linux, Windows and macOS; tests + offline demo/report generation |
+| **CacheCraft** | Debug + Release across Linux, Windows and macOS; core tests + analysis tests + experiment smoke run |
+| **Smart Mobility** | Debug + Release across Linux, Windows and macOS; controller + safety-module tests + demo smoke run |
+| **University System** | Java 17 + 21 across Linux, Windows and macOS; original + advanced v3 checks + HTML demo generation |
 
-A safety-oriented C++17 control core and Arduino integration prototype for powered mobility.
-
-- discrete commands and normalized differential-drive joystick mixing
-- Eco, Normal, and Sport modes with separate acceleration and deceleration ramps
-- braking-before-reversal, watchdog timeout, obstacle slowdown/stop, and battery derating
-- emergency-stop and sensor-fault latching, seat interlock, safe fault clearing, and event history
-- detailed telemetry and deterministic CSV scenario simulation
-- host-tested portable controller plus an Arduino I/O integration sketch
-
-**Engineering focus:** embedded control, state machines, fail-safe behaviour, hardware/software boundaries, scenario testing.
-
-> Portfolio prototype only; it is not certified medical-device software.
-
----
-
-### [University Management System](https://github.com/shiv814/university-management-system)
-
-[![University system build](https://github.com/shiv814/university-management-system/actions/workflows/build.yml/badge.svg)](https://github.com/shiv814/university-management-system/actions/workflows/build.yml)
-
-A dependency-free Java 17 academic-record and enrollment application.
-
-- validated students, courses, credits, terms, capacities, and prerequisite sets
-- enrolled, waitlisted, completed, and dropped lifecycle states
-- FIFO waitlists with automatic seat promotion
-- prerequisite enforcement, transcripts, earned/attempted credits, and weighted GPA
-- course recommendations, search, dashboard analytics, and quoted interactive commands
-- correctly escaped CSV persistence with complete save/load restoration
-
-**Engineering focus:** object-oriented domain modeling, immutable records, collection design, persistence, lifecycle invariants.
-
-## Portfolio verification
-
-Every project includes automated tests and a GitHub Actions workflow. The Python projects run across multiple supported Python versions, the C++ projects build in Debug and Release configurations across Linux, Windows, and macOS, and the Java project compiles and tests on Java 17 and 21 across all three operating systems.
+I use CI here as part of the design constraint: portable code, deterministic tests, and reproducible demos are more useful portfolio evidence than a claim that something “works on my machine.”
 
 ## Technical toolkit
 
-| Area | Technologies |
+| Area | Technologies / concepts |
 |---|---|
-| Languages | Python, C++, Java, C, SQL, HTML/CSS |
-| Backend and data | REST/HTTP, JSON, SQLite, CSV persistence, analytics |
-| Systems | Linux concepts, process/system metrics, cache architecture, memory behaviour |
-| Embedded | Arduino, differential motor control, watchdogs, sensor interlocks, telemetry |
-| Build and quality | Git, GitHub Actions, CMake, Make, pytest, deterministic host tests |
-| Design | State machines, immutable domain records, layered architecture, validation, fault handling |
+| **Languages** | Python, C++, Java, C, SQL, HTML/CSS |
+| **Backend / data** | REST/JSON, SQLite, CSV persistence, HTTP servers, schema migrations |
+| **Systems** | observability, process/system metrics, memory hierarchy, cache policies, time-series signals |
+| **Embedded** | Arduino, differential drive, watchdogs, interlocks, PWM control, odometry, telemetry |
+| **Algorithms** | graph traversal, topological ordering, backtracking, scheduling, Pareto filtering, anomaly detection |
+| **Engineering workflow** | Git, GitHub Actions, CMake, pytest, javac lint-as-error, cross-platform CI |
 
-## How I approach engineering work
+## How I approach engineering problems
 
-1. Define the domain rules and failure cases before adding interfaces.
-2. Separate hardware, transport, persistence, and analysis concerns where possible.
-3. Make unsafe or invalid states explicit through types, validation, and state transitions.
-4. Build deterministic tests around the most important behaviours and edge cases.
-5. Document tradeoffs, usage, architecture, and realistic next steps—not only the happy path.
+**Model the state first.** I prefer named states, records, invariants and explicit transitions over scattered booleans and implicit assumptions.
 
-## Current interests
+**Separate mutation from analysis.** The projects increasingly isolate core state changes from analytics, reporting and visualization so those layers can be tested independently.
 
-Embedded systems, backend engineering, operating-system tooling, computer architecture, observability, reliability, simulation, and hardware-software integration.
+**Test failure paths.** Missing prerequisites, cache misses, stale commands, full capacity, sensor faults, alert escalation and bad input are first-class scenarios—not edge cases to ignore.
+
+**Make trade-offs visible.** Documentation explains why a lightweight SQLite/CSV solution is appropriate for a portfolio scope, where a real deployment would require different infrastructure, and where safety/regulatory claims explicitly stop.
+
+## Currently interested in
+
+- embedded/software co-op roles
+- controls and automation software
+- systems programming and computer architecture
+- backend/platform engineering
+- observability and reliability engineering
+- hardware/software integration
+
+## More detail
+
+The [portfolio engineering matrix](docs/PROJECT_MATRIX.md) compares the five projects by problem, strongest engineering signal, and verification approach.
 
 ## Contact
 
-- GitHub: [@shiv814](https://github.com/shiv814)
-- Email: `pateshiv16@gmail.com`
+**Shivam Patel** · Computer Engineering Co-op · University of Guelph  
+📧 `pateshiv16@gmail.com`  
+🔗 [github.com/shiv814](https://github.com/shiv814)
